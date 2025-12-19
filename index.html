@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>KvaytG | GitHub</title>
+		<link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/x-icon" href="images/favicons/favicon.ico">
+		<link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png" sizes="180x180">
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="robots" content="index, follow">
+	</head>
+	<body>
+		<main class="container">
+			<article class="container-article">
+				<h1>Мой GitHub</h1>
+				<p><a href="https://github.com/KvaytG?tab=repositories" target="_blank">Мой GitHub</a> — это практические решения для повседневных задач разработки и автоматизации. Каждый инструмент рожден из реальной необходимости.</p>
+				<p class="list-title">Содержание</p>
+				<ul>
+					<li><a href="#win-tools">win-tools</a></li>
+					<li><a href="#fb2-converter">fb2-converter</a></li>
+					<li><a href="#manhwa-russifier">manhwa-russifier</a></li>
+					<li><a href="#en-ru-corpus-utils">en-ru-corpus-utils</a></li>
+					<li><a href="#core-mc-plugin">core-mc-plugin</a></li>
+					<li><a href="#discord-music-bot">discord-music-bot</a></li>
+					<li><a href="#caption-forge">caption-forge</a></li>
+					<li><a href="#simple-unzipper">simple-unzipper</a></li>
+				</ul>
+				<hr>
+				<h2 id="win-tools">win-tools</h2>
+				<p><b>Проблема:</b> Доступ к нативным Windows API из Java-приложений.</p>
+				<p><b>Решение:</b> Библиотека-обёртка над собственными DLL, предоставляющая Java-интерфейс для системных операций: управление мышью, терминалом, уведомлениями, диалоговыми окнами и опасными функциями (BSOD, shutdown).</p>
+				<p><a href="https://github.com/KvaytG/win-tools" target="_blank">Исходный код (GitHub)</a></p>
+				<hr>
+				<h2 id="fb2-converter">fb2-converter</h2>
+				<p><b>Проблема:</b> Конвертация различных текстовых форматов в стандарт FictionBook 2.0.</p>
+				<p><b>Решение:</b> Инструмент для преобразования TXT, PDF и EPUB файлов в FB2 с сохранением структуры, генерацией обложки и оглавления, а также автоопределением заголовков.</p>
+				<p><a href="https://github.com/KvaytG/fb2-converter" target="_blank">Исходный код (GitHub)</a></p>
+				<hr>
+				<h2 id="manhwa-russifier">manhwa-russifier</h2>
+				<p><b>Проблема:</b> Автоматическая локализация манхвы.</p>
+				<p><b>Решение:</b> Полный пайплайн обработки: детекция текстовых областей YOLOv8 → распознавание EasyOCR → перевод → заливка оригинала LaMa → рендеринг переведённого текста с учётом контекста.</p>
+				<p><a href="https://github.com/KvaytG/manhwa-russifier" target="_blank">Исходный код (GitHub)</a></p>
+				<hr>
+				<h2 id="en-ru-corpus-utils">en-ru-corpus-utils</h2>
+				<p><b>Проблема:</b> Подготовка качественных параллельных корпусов для машинного перевода.</p>
+				<p><b>Решение:</b> Набор утилит для очистки, фильтрации и валидации англо-русских текстовых пар с использованием статистических, лингвистических и семантических (LaBSE) методов фильтрации.</p>
+				<p><a href="https://github.com/KvaytG/en-ru-corpus-utils" target="_blank">Исходный код (GitHub)</a></p>
+				<hr>
+				<h2 id="core-mc-plugin">core-mc-plugin</h2>
+				<p><b>Проблема:</b> Комплексное управление и кастомизация Minecraft-сервера на Paper 1.16.5.</p>
+				<p><b>Решение:</b> Многофункциональный плагин, объединяющий системы варпов, режима невидимости, модерации, игровых перков и ограничений с конфигурируемыми правами доступа и локализацией.</p>
+				<p><a href="https://github.com/KvaytG/core-mc-plugin" target="_blank">Исходный код (GitHub)</a></p>
+				<hr>
+				<h2 id="discord-music-bot">discord-music-bot</h2>
+				<p><b>Проблема:</b> Воспроизведение музыки в Discord с полным контролем над плеером.</p>
+				<p><b>Решение:</b> Бот на Java с архитектурой на основе модулей, предоставляющий слэш-команды для управления воспроизведением, очередью, громкостью и интерактивным плеером с поддержкой Bandcamp, Vimeo, SoundCloud и других платформ.</p>
+				<p><a href="https://github.com/KvaytG/discord-music-bot" target="_blank">Исходный код (GitHub)</a></p>
+				<hr>
+				<h2 id="caption-forge">caption-forge</h2>
+				<p><b>Проблема:</b> Автоматическое наложение текста на изображения с адаптивным форматированием.</p>
+				<b>Решение:</b> Библиотека для автоматического подбора размера шрифта, переноса строк, цвета текста и обводки для оптимальной читаемости текста на любом фоне изображения. Использует алгоритмы анализа цвета и геометрии ROI.</p>
+				<p><a href="https://github.com/KvaytG/caption-forge" target="_blank">Исходный код (GitHub)</a></p>
+				<hr>
+				<h2 id="simple-unzipper">simple-unzipper</h2>
+				<p><b>Проблема:</b> Безопасная и удобная распаковка ZIP-архивов в командной строке.</p>
+				<b>Решение:</b> Консольное Java-приложение с защитой от ZipSlip-атак, уникальными именами папок для избежания конфликтов и кроссплатформенным выводом (цветной терминал + Windows-уведомления).</p>
+				<p><a href="https://github.com/KvaytG/simple-unzipper" target="_blank">Исходный код (GitHub)</a></p>
+			</article>
+		</main>
+		<footer class="container">
+			<hr>
+			<p class="footer-text inactive">© 2025 KvaytG. Все права защищены.<br>Если что-то пошло не так, попробуйте обновить страницу.</p>
+		</footer>
+		<div></div>
+		<script src="scripts/main.js"></script>
+	</body>
+</html>
