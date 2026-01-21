@@ -20,8 +20,11 @@
 				<p class="list-title">Содержание</p>
 				<ul>
 					<li><a href="#win-tools">win-tools</a></li>
-					<li><a href="#fb2-converter">fb2-converter</a></li>
+					<li><a href="#ru-chat-bot">ru-chat-bot</a></li>
+					<li><a href="#ru-toxicity-detector">ru-toxicity-detector</a></li>
+					<li><a href="#ru-wiki-search">ru-wiki-search</a></li>
 					<li><a href="#manhwa-russifier">manhwa-russifier</a></li>
+					<li><a href="#fb2-converter">fb2-converter</a></li>
 					<li><a href="#en-ru-corpus-utils">en-ru-corpus-utils</a></li>
 					<li><a href="#core-mc-plugin">core-mc-plugin</a></li>
 					<li><a href="#discord-music-bot">discord-music-bot</a></li>
@@ -34,15 +37,30 @@
 				<p><b>Решение:</b> Библиотека-обёртка над собственными DLL, предоставляющая Java-интерфейс для системных операций: управление мышью, терминалом, уведомлениями, диалоговыми окнами и опасными функциями (BSOD, shutdown).</p>
 				<p><a href="https://github.com/KvaytG/win-tools" target="_blank">Исходный код (GitHub)</a></p>
 				<hr>
-				<h2 id="fb2-converter">fb2-converter</h2>
-				<p><b>Проблема:</b> Конвертация различных текстовых форматов в стандарт FictionBook 2.0.</p>
-				<p><b>Решение:</b> Инструмент для преобразования TXT, PDF и EPUB файлов в FB2 с сохранением структуры, генерацией обложки и оглавления, а также автоопределением заголовков.</p>
-				<p><a href="https://github.com/KvaytG/fb2-converter" target="_blank">Исходный код (GitHub)</a></p>
+				<h2 id="ru-chat-bot">ru-chat-bot</h2>
+				<p><b>Проблема:</b> Создание интеллектуального чат-бота с пониманием естественного языка на русском.</p>
+				<p><b>Решение:</b> Модульный AI-бот на базе глубокого обучения, использующий трансформеры (RuBERT) для векторизации, NLU-модель для классификации намерений, NER для извлечения сущностей и FAISS для семантического поиска. Поддерживает погоду, новости, поиск в Википедии и умный диалог.</p>
+				<p><a href="https://github.com/KvaytG/ru-chat-bot" target="_blank">Исходный код (GitHub)</a></p>
+				<hr>
+				<h2 id="ru-toxicity-detector">ru-toxicity-detector</h2>
+				<p><b>Проблема:</b> Автоматическое определение токсичных текстов на русском языке.</p>
+				<p><b>Решение:</b> Гибридная модель, сочетающая нейросетевые эмбеддинги (rubert-tiny2) со словарным методом. Оптимизирована для высокого precision (98%) с минимальным количеством ложных срабатываний. Включает систему исключений для контекстно-зависимой классификации.</p>
+				<p><a href="https://github.com/KvaytG/ru-toxicity-detector" target="_blank">Исходный код (GitHub)</a></p>
+				<hr>
+				<h2 id="ru-wiki-search">ru-wiki-search</h2>
+				<p><b>Проблема:</b> Быстрый локальный поиск по заголовкам Русской Википедии с поддержкой нечёткого сопоставления.</p>
+				<p><b>Решение:</b> Библиотека с FTS5-индексом на SQLite, использующая лемматизацию и комбинированные метрики ранжирования (fuzzy matching + семантическое сходство). Автоматически загружает и обрабатывает дампы Википедии, предоставляет краткие описания статей.</p>
+				<p><a href="https://github.com/KvaytG/ru-wiki-search" target="_blank">Исходный код (GitHub)</a></p>
 				<hr>
 				<h2 id="manhwa-russifier">manhwa-russifier</h2>
 				<p><b>Проблема:</b> Автоматическая локализация манхвы.</p>
 				<p><b>Решение:</b> Полный пайплайн обработки: детекция текстовых областей YOLOv8 → распознавание EasyOCR → перевод → заливка оригинала LaMa → рендеринг переведённого текста с учётом контекста.</p>
 				<p><a href="https://github.com/KvaytG/manhwa-russifier" target="_blank">Исходный код (GitHub)</a></p>
+				<hr>
+				<h2 id="fb2-converter">fb2-converter</h2>
+				<p><b>Проблема:</b> Конвертация различных текстовых форматов в стандарт FictionBook 2.0.</p>
+				<p><b>Решение:</b> Инструмент для преобразования TXT, PDF и EPUB файлов в FB2 с сохранением структуры, генерацией обложки и оглавления, а также автоопределением заголовков.</p>
+				<p><a href="https://github.com/KvaytG/fb2-converter" target="_blank">Исходный код (GitHub)</a></p>
 				<hr>
 				<h2 id="en-ru-corpus-utils">en-ru-corpus-utils</h2>
 				<p><b>Проблема:</b> Подготовка качественных параллельных корпусов для машинного перевода.</p>
