@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>KvaytG | GitHub</title>
+		<link rel="icon" type="image/png" href="/1-images/favicons/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="/1-images/favicons/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/x-icon" href="/1-images/favicons/favicon.ico">
+		<link rel="apple-touch-icon" href="/1-images/favicons/apple-touch-icon.png" sizes="180x180">
+		<link rel="stylesheet" type="text/css" href="/2-styles/style.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="robots" content="index, follow">
+        <!-- Yandex.Metrika counter -->
+		<script type="text/javascript">
+			(function(m,e,t,r,i,k,a){
+				m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+				m[i].l=1*new Date();
+				for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+				k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+			})(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106931409', 'ym');
+
+			ym(106931409, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+		</script>
+		<noscript><div><img src="https://mc.yandex.ru/watch/106931409" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<!-- /Yandex.Metrika counter -->
+	</head>
+	<body>
+		<header class="container">
+			<div class="header-content">
+				<h1>My GitHub</h1>
+				<nav class="lang-switcher">
+					<a href="/ru/" class="lang-link" onclick="handleLangSwitch(event, 'ru')">
+						<img src="https://kvaytg.ru/common/flags/ru-21x16.svg" alt="RU" class="flag-icon">
+						<span>RU</span>
+					</a>
+					<span class="lang-divider">|</span>
+					<a href="/en/" class="lang-link active" onclick="handleLangSwitch(event, 'en')">
+						<img src="https://kvaytg.ru/common/flags/us-21x16.svg" alt="EN" class="flag-icon">
+						<span>EN</span>
+					</a>
+				</nav>
+			</div>
+		</header>
+		<main class="container">
+			<article class="container-article">
+				<p><a href="https://github.com/KvaytG?tab=repositories" target="_blank">My GitHub</a> features practical solutions for everyday development and automation tasks. Every tool is born out of real-world necessity.</p>
+				<p class="list-title">Table of Contents</p>
+				<ul>
+					<li><a href="#win-tools">win-tools</a></li>
+					<li><a href="#ru-chat-bot">ru-chat-bot</a></li>
+					<li><a href="#ru-toxicity-detector">ru-toxicity-detector</a></li>
+					<li><a href="#ru-wiki-search">ru-wiki-search</a></li>
+					<li><a href="#manhwa-russifier">manhwa-russifier</a></li>
+					<li><a href="#fb2-converter">fb2-converter</a></li>
+					<li><a href="#en-ru-corpus-utils">en-ru-corpus-utils</a></li>
+					<li><a href="#core-mc-plugin">core-mc-plugin</a></li>
+					<li><a href="#discord-music-bot">discord-music-bot</a></li>
+					<li><a href="#caption-forge">caption-forge</a></li>
+					<li><a href="#simple-unzipper">simple-unzipper</a></li>
+					<li><a href="#services">SERVICES</a></li>
+				</ul>
+				<hr>
+				<h2 id="win-tools">win-tools</h2>
+				<p><b>Challenge:</b> Accessing native Windows APIs from Java applications.</p>
+				<p><b>Solution:</b> A wrapper library over custom DLLs that provides a Java interface for system operations: mouse and terminal control, notifications, dialog boxes, and critical functions (BSOD, shutdown).</p>
+				<p><a href="https://github.com/KvaytG/win-tools" target="_blank">Source Code (GitHub)</a></p>
+				<hr>
+				<h2 id="ru-chat-bot">ru-chat-bot</h2>
+				<p><b>Challenge:</b> Developing an intelligent chatbot with Russian Natural Language Understanding.</p>
+				<p><b>Solution:</b> A modular AI bot powered by deep learning. It utilizes Transformers (RuBERT) for vectorization, an NLU model for intent classification, NER for entity extraction, and FAISS for semantic search. Supports weather, news, Wikipedia search, and smart dialogue.</p>
+				<p><a href="https://github.com/KvaytG/ru-chat-bot" target="_blank">Source Code (GitHub)</a></p>
+				<hr>
+				<h2 id="ru-toxicity-detector">ru-toxicity-detector</h2>
+				<p><b>Challenge:</b> Automated detection of toxic content in Russian text.</p>
+				<p><b>Solution:</b> A hybrid model combining neural network embeddings (rubert-tiny2) with a dictionary-based approach. Optimized for high precision (98%) with minimal false positives. Includes an exception system for context-aware classification.</p>
+				<p><a href="https://github.com/KvaytG/ru-toxicity-detector" target="_blank">Source Code (GitHub)</a></p>
+				<hr>
+				<h2 id="ru-wiki-search">ru-wiki-search</h2>
+				<p><b>Challenge:</b> Fast local search through Russian Wikipedia titles with fuzzy matching support.</p>
+				<p><b>Solution:</b> A library featuring an SQLite FTS5 index, utilizing lemmatization and combined ranking metrics (fuzzy matching + semantic similarity). Automatically downloads and processes Wikipedia dumps, providing brief article descriptions.</p>
+				<p><a href="https://github.com/KvaytG/ru-wiki-search" target="_blank">Source Code (GitHub)</a></p>
+				<hr>
+				<h2 id="manhwa-russifier">manhwa-russifier</h2>
+				<p><b>Challenge:</b> Automated localization for manhwa.</p>
+				<p><b>Solution:</b> A complete processing pipeline: text area detection via YOLOv8 → EasyOCR recognition → translation → original text removal using LaMa inpainting → rendering translated text with context awareness.</p>
+				<p><a href="https://github.com/KvaytG/manhwa-russifier" target="_blank">Source Code (GitHub)</a></p>
+				<hr>
+				<h2 id="fb2-converter">fb2-converter</h2>
+				<p><b>Challenge:</b> Converting various text formats into the FictionBook 2.0 standard.</p>
+				<p><b>Solution:</b> A tool for transforming TXT, PDF, and EPUB files into FB2 while preserving structure, generating covers and tables of contents, and auto-detecting headers.</p>
+				<p><a href="https://github.com/KvaytG/fb2-converter" target="_blank">Source Code (GitHub)</a></p>
+				<hr>
+				<h2 id="en-ru-corpus-utils">en-ru-corpus-utils</h2>
+				<p><b>Challenge:</b> Preparing high-quality parallel corpora for machine translation.</p>
+				<p><b>Solution:</b> A set of utilities for cleaning, filtering, and validating English-Russian text pairs using statistical, linguistic, and semantic (LaBSE) filtering methods.</p>
+				<p><a href="https://github.com/KvaytG/en-ru-corpus-utils" target="_blank">Source Code (GitHub)</a></p>
+				<hr>
+				<h2 id="core-mc-plugin">core-mc-plugin</h2>
+				<p><b>Challenge:</b> Comprehensive management and customization for Minecraft servers on Paper 1.16.5.</p>
+				<p><b>Solution:</b> A multi-functional plugin combining warp systems, vanish mode, moderation tools, player perks, and restrictions with configurable permissions and localization.</p>
+				<p><a href="https://github.com/KvaytG/core-mc-plugin" target="_blank">Source Code (GitHub)</a></p>
+				<hr>
+				<h2 id="discord-music-bot">discord-music-bot</h2>
+				<p><b>Challenge:</b> Playing music in Discord with full player control.</p>
+				<p><b>Solution:</b> A Java-based bot with modular architecture, providing slash commands for playback management, queueing, volume control, and an interactive player supporting Bandcamp, Vimeo, SoundCloud, and other platforms.</p>
+				<p><a href="https://github.com/KvaytG/discord-music-bot" target="_blank">Source Code (GitHub)</a></p>
+				<hr>
+				<h2 id="caption-forge">caption-forge</h2>
+				<p><b>Challenge:</b> Automatic text overlay on images with adaptive formatting.</p>
+				<p><b>Solution:</b> A library for automatic font size selection, line wrapping, text coloring, and outlining to ensure optimal readability on any background. Uses color analysis and ROI geometry algorithms.</p>
+				<p><a href="https://github.com/KvaytG/caption-forge" target="_blank">Source Code (GitHub)</a></p>
+				<hr>
+				<h2 id="simple-unzipper">simple-unzipper</h2>
+				<p><b>Challenge:</b> Secure and convenient ZIP archive extraction via command line.</p>
+				<p><b>Solution:</b> A Java CLI application featuring protection against ZipSlip attacks, unique folder naming to avoid conflicts, and cross-platform output (colored terminal + Windows notifications).</p>
+                <p><a href="https://github.com/KvaytG/simple-unzipper" target="_blank">Source Code (GitHub)</a></p>
+			    <hr>
+                <p id="services" class="list-title">SERVICES</p>
+				<ul>
+					<li><a href="minecraft" target="_blank">Minecraft-plugins</a></li>
+                    <li><a href="telegram" target="_blank">Telegram-bots</a></li>
+                </ul>
+            </article>
+		</main>
+		<footer class="container">
+			<hr>
+			<p class="footer-text inactive">© 2026 KvaytG. All rights reserved.<br>If something went wrong, try refreshing the page.</p>
+		</footer>
+		<script src="/3-scripts/main.js"></script>
+	</body>
+</html>

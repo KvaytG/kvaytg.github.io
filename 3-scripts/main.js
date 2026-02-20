@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
     const offset = 50;
 
@@ -23,3 +24,20 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+function handleLangSwitch(event, targetLang) {
+    event.preventDefault();
+    let currentPath = window.location.pathname;
+    let newPath = currentPath;
+    if (targetLang === 'en' && currentPath.includes('/ru/')) {
+        newPath = currentPath.replace('/ru/', '/en/');
+    } else if (targetLang === 'ru' && currentPath.includes('/en/')) {
+        newPath = currentPath.replace('/en/', '/ru/');
+    }
+    if (newPath === currentPath && !currentPath.includes('/' + targetLang + '/')) {
+        newPath = '/' + targetLang + '/';
+    }
+    if (newPath !== currentPath) {
+        window.location.href = newPath;
+    }
+}
